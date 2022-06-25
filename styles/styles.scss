@@ -248,7 +248,8 @@ section{
 
 //Portoflio
 .port-text{
-    padding: 2rem 0;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
     text-align: center;
 }
 .portfolios{
@@ -320,6 +321,42 @@ section{
 .portfolio-item:hover .hover-items{
     opacity: 1;
     transform: scale(1);
+}
+
+
+//Contact
+.contact-content-con{
+    display: flex;
+    padding-top: 3.5rem;
+    .left-contact{
+        flex: 2;
+    }
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+        .input-control{
+            margin: 1.5rem 0;
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey-5);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+        .i-c-2{
+            display: flex;
+            :last-child{
+                margin-left: 1.5rem;
+            }
+        }
+    }
 }
 
 //Independent components
@@ -523,6 +560,7 @@ section{
     position: relative;
     &::before{
         content: '';
+        position: absolute;
         left: 50%;
         top: 0;
         width: 40%;
