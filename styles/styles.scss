@@ -169,6 +169,12 @@ section{
     align-items: center;
     box-shadow: 0 3px 15px rgba(0,0,0,.3);
     transition: all .1s ease-in-out;
+    &:hover{
+        background-color: var(--color-secondary);
+        i{
+            color: var(--color--white);
+        }
+    }
     &:active{
         transform: translateY(-3px);
     }

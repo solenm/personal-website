@@ -35,7 +35,20 @@ function transitions(){
     themeBtn.addEventListener('click', () =>{
         let element= document.body;
         element.classList.toggle('light-mode');
-    })
+
+        let themeIcon = document.getElementById('theme-icon');
+        if(themeIcon.classList.contains("fa-sun")){
+            themeIcon.classList.add("fa-moon")
+            themeIcon.classList.remove("fa-sun");
+        }
+        else{
+            themeIcon.classList.add("fa-sun")
+            themeIcon.classList.remove("fa-moon");
+        }
+        
+       
+    });
+
 }
 
 transitions(); 

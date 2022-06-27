@@ -218,6 +218,14 @@ section {
   transition: all .1s ease-in-out;
 }
 
+.theme-btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.theme-btn:hover i {
+  color: var(--color--white);
+}
+
 .theme-btn:active {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
