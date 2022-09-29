@@ -938,7 +938,7 @@ section {
           transform: translateX(-50%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   header {
     padding: 0;
   }
